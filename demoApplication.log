@@ -1,0 +1,503 @@
+2021-04-29 23:22:07 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-29 23:22:08 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:22:08 IST 2021]; root of context hierarchy
+2021-04-29 23:22:08 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-29 23:22:08 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-29 23:22:08 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-29 23:22:08 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-29 23:22:09 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-29 23:22:09 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-29 23:22:09 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-29 23:22:09 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-29 23:22:09 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-29 23:22:09 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-29 23:22:09 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-29 23:22:10 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-29 23:22:10 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-29 23:22:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:22:10 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:22:10 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-29 23:22:10 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-29 23:22:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-29 23:22:10 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-29 23:22:10 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-29 23:22:10 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-29 23:22:10 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:22:10 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:22:10 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:22:10 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:22:08 IST 2021]; root of context hierarchy
+2021-04-29 23:22:10 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:22:08 IST 2021]; root of context hierarchy
+2021-04-29 23:22:11 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@350ff014
+2021-04-29 23:22:11 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:22:08 IST 2021]; root of context hierarchy
+2021-04-29 23:38:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-29 23:38:40 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:38:40 IST 2021]; root of context hierarchy
+2021-04-29 23:38:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-29 23:38:40 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-29 23:38:40 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-29 23:38:40 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-29 23:38:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-29 23:38:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-29 23:38:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-29 23:38:41 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-29 23:38:41 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-29 23:38:41 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-29 23:38:41 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-29 23:38:41 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-29 23:38:41 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-29 23:38:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:38:41 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:38:41 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-29 23:38:41 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-29 23:38:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-29 23:38:41 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-29 23:38:41 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-29 23:38:41 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-29 23:38:41 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:38:41 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:38:41 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:38:42 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:38:40 IST 2021]; root of context hierarchy
+2021-04-29 23:38:42 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:38:40 IST 2021]; root of context hierarchy
+2021-04-29 23:38:42 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-29 23:38:42 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@5cdf221a
+2021-04-29 23:38:42 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:38:40 IST 2021]; root of context hierarchy
+2021-04-29 23:39:32 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-29 23:39:32 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:39:32 IST 2021]; root of context hierarchy
+2021-04-29 23:39:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-29 23:39:33 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-29 23:39:33 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-29 23:39:33 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-29 23:39:33 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-29 23:39:33 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-29 23:39:33 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-29 23:39:33 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-29 23:39:33 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-29 23:39:33 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-29 23:39:33 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-29 23:39:33 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-29 23:39:33 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-29 23:39:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:39:33 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:39:33 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-29 23:39:33 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-29 23:39:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-29 23:39:33 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-29 23:39:33 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-29 23:39:33 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-29 23:39:33 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:39:33 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:39:33 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-29 23:39:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-29 23:39:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:39:32 IST 2021]; root of context hierarchy
+2021-04-29 23:39:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:39:32 IST 2021]; root of context hierarchy
+2021-04-29 23:39:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-29 23:39:35 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-29 23:39:35 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:39:32 IST 2021]; root of context hierarchy
+2021-04-29 23:41:07 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-29 23:41:07 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:41:07 IST 2021]; root of context hierarchy
+2021-04-29 23:41:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-29 23:41:07 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-29 23:41:07 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-29 23:41:07 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-29 23:41:08 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-29 23:41:08 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-29 23:41:08 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-29 23:41:08 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-29 23:41:08 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-29 23:41:08 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-29 23:41:08 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-29 23:41:08 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-29 23:41:08 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-29 23:41:08 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:41:08 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:41:08 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-29 23:41:08 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-29 23:41:08 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-29 23:41:08 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-29 23:41:08 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-29 23:41:08 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-29 23:41:08 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:41:08 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:41:08 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:41:09 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:41:07 IST 2021]; root of context hierarchy
+2021-04-29 23:41:09 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:41:07 IST 2021]; root of context hierarchy
+2021-04-29 23:41:09 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-29 23:41:09 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-29 23:41:09 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:41:07 IST 2021]; root of context hierarchy
+2021-04-29 23:42:00 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-29 23:42:01 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:42:01 IST 2021]; root of context hierarchy
+2021-04-29 23:42:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-29 23:42:01 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-29 23:42:01 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-29 23:42:01 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-29 23:42:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-29 23:42:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-29 23:42:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-29 23:42:01 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-29 23:42:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-29 23:42:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-29 23:42:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-29 23:42:02 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-29 23:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-29 23:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:42:02 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-29 23:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-29 23:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-29 23:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-29 23:42:02 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-29 23:42:02 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-29 23:42:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:42:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:42:02 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:42:02 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:42:01 IST 2021]; root of context hierarchy
+2021-04-29 23:42:02 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:42:01 IST 2021]; root of context hierarchy
+2021-04-29 23:42:03 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-29 23:42:03 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-29 23:42:03 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:42:01 IST 2021]; root of context hierarchy
+2021-04-29 23:43:01 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-29 23:43:01 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:43:01 IST 2021]; root of context hierarchy
+2021-04-29 23:43:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-29 23:43:01 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-29 23:43:01 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-29 23:43:01 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-29 23:43:02 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-29 23:43:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-29 23:43:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-29 23:43:02 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-29 23:43:02 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-29 23:43:02 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-29 23:43:02 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-29 23:43:02 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-29 23:43:02 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-29 23:43:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:43:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:43:02 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-29 23:43:02 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-29 23:43:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-29 23:43:02 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-29 23:43:02 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-29 23:43:02 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-29 23:43:02 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:43:02 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:43:02 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:43:03 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:43:01 IST 2021]; root of context hierarchy
+2021-04-29 23:43:03 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:43:01 IST 2021]; root of context hierarchy
+2021-04-29 23:43:03 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-29 23:43:03 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@5cdf221a
+2021-04-29 23:43:03 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:43:01 IST 2021]; root of context hierarchy
+2021-04-29 23:44:32 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-29 23:44:32 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:44:32 IST 2021]; root of context hierarchy
+2021-04-29 23:44:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-29 23:44:33 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-29 23:44:33 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-29 23:44:33 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-29 23:44:33 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-29 23:44:33 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-29 23:44:33 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-29 23:44:33 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-29 23:44:34 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-29 23:44:34 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-29 23:44:34 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-29 23:44:34 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-29 23:44:34 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-29 23:44:34 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:44:34 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:44:34 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-29 23:44:34 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-29 23:44:34 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-29 23:44:34 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-29 23:44:34 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-29 23:44:34 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-29 23:44:34 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-29 23:44:34 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-29 23:44:34 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-29 23:44:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:44:32 IST 2021]; root of context hierarchy
+2021-04-29 23:44:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:44:32 IST 2021]; root of context hierarchy
+2021-04-29 23:44:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-29 23:44:34 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-29 23:44:35 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Thu Apr 29 23:44:32 IST 2021]; root of context hierarchy
+2021-04-30 07:18:58 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-30 07:18:58 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:18:58 IST 2021]; root of context hierarchy
+2021-04-30 07:18:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-30 07:18:59 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-30 07:18:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-30 07:18:59 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-30 07:18:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-30 07:18:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-30 07:18:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-30 07:18:59 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-30 07:19:00 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-30 07:19:00 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-30 07:19:00 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-30 07:19:00 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-30 07:19:00 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-30 07:19:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 07:19:00 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 07:19:00 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-30 07:19:00 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-30 07:19:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-30 07:19:00 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-30 07:19:00 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-30 07:19:00 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-30 07:19:00 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 07:19:00 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 07:19:00 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-30 07:19:00 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:18:58 IST 2021]; root of context hierarchy
+2021-04-30 07:19:00 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:18:58 IST 2021]; root of context hierarchy
+2021-04-30 07:19:01 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-30 07:19:01 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-30 07:19:01 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:18:58 IST 2021]; root of context hierarchy
+2021-04-30 07:24:19 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-30 07:24:19 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:24:19 IST 2021]; root of context hierarchy
+2021-04-30 07:24:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-30 07:24:19 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-30 07:24:19 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-30 07:24:19 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-30 07:24:20 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-30 07:24:20 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-30 07:24:20 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-30 07:24:20 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-30 07:24:20 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-30 07:24:20 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-30 07:24:20 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-30 07:24:20 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-30 07:24:20 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-30 07:24:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 07:24:20 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 07:24:20 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-30 07:24:20 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-30 07:24:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-30 07:24:20 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-30 07:24:20 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-30 07:24:20 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-30 07:24:20 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 07:24:20 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 07:24:20 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-30 07:24:20 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-30 07:24:21 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:24:19 IST 2021]; root of context hierarchy
+2021-04-30 07:24:21 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:24:19 IST 2021]; root of context hierarchy
+2021-04-30 07:24:21 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-30 07:24:21 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-30 07:24:21 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 07:24:19 IST 2021]; root of context hierarchy
+2021-04-30 09:00:26 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-30 09:00:26 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Fri Apr 30 09:00:26 IST 2021]; root of context hierarchy
+2021-04-30 09:00:27 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-30 09:00:27 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-30 09:00:27 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-30 09:00:27 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-30 09:00:27 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-30 09:00:27 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-30 09:00:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-30 09:00:27 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-30 09:00:27 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-30 09:00:27 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-30 09:00:27 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-30 09:00:28 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-30 09:00:28 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-30 09:00:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 09:00:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 09:00:28 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-30 09:00:28 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-30 09:00:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-30 09:00:28 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-30 09:00:28 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-30 09:00:28 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-30 09:00:28 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 09:00:28 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 09:00:28 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:00:28 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-30 09:00:29 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Fri Apr 30 09:00:26 IST 2021]; root of context hierarchy
+2021-04-30 09:00:29 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Fri Apr 30 09:00:26 IST 2021]; root of context hierarchy
+2021-04-30 09:00:29 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@77fc19cf
+2021-04-30 09:00:29 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@36d697ab
+2021-04-30 09:00:29 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@2cf3d63b: startup date [Fri Apr 30 09:00:26 IST 2021]; root of context hierarchy
+2021-04-30 09:06:20 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-30 09:06:20 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:20 IST 2021]; root of context hierarchy
+2021-04-30 09:06:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-30 09:06:21 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-30 09:06:21 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-30 09:06:21 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-30 09:06:21 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-30 09:06:21 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-30 09:06:21 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-30 09:06:21 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-30 09:06:21 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-30 09:06:21 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-30 09:06:22 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-30 09:06:22 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-30 09:06:22 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-30 09:06:22 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 09:06:22 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 09:06:22 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-30 09:06:22 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-30 09:06:22 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-30 09:06:22 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-30 09:06:22 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-30 09:06:22 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-30 09:06:22 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 09:06:22 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 09:06:22 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:22 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:20 IST 2021]; root of context hierarchy
+2021-04-30 09:06:22 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:20 IST 2021]; root of context hierarchy
+2021-04-30 09:06:22 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-30 09:06:22 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-30 09:06:23 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:20 IST 2021]; root of context hierarchy
+2021-04-30 09:06:42 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [abc-servlet.xml]
+2021-04-30 09:06:42 INFO  GenericWebApplicationContext:583 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:42 IST 2021]; root of context hierarchy
+2021-04-30 09:06:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2021-04-30 09:06:42 INFO  Version:54 - HHH000412: Hibernate Core {4.3.6.Final}
+2021-04-30 09:06:42 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2021-04-30 09:06:42 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2021-04-30 09:06:43 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2021-04-30 09:06:43 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2021-04-30 09:06:43 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2021-04-30 09:06:43 INFO  Version:30 - HV000001: Hibernate Validator 5.4.3.Final
+2021-04-30 09:06:43 INFO  SchemaUpdate:182 - HHH000228: Running hbm2ddl schema update
+2021-04-30 09:06:43 INFO  SchemaUpdate:193 - HHH000102: Fetching database metadata
+2021-04-30 09:06:43 INFO  SchemaUpdate:205 - HHH000396: Updating schema
+2021-04-30 09:06:43 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet
+2021-04-30 09:06:43 INFO  TableMetadata:67 - HHH000037: Columns: [petplace, petid, petname, petage]
+2021-04-30 09:06:43 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 09:06:43 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 09:06:43 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.pet_user
+2021-04-30 09:06:43 INFO  TableMetadata:67 - HHH000037: Columns: [petid, userid]
+2021-04-30 09:06:43 INFO  TableMetadata:69 - HHH000108: Foreign keys: [fk_h7bihxhyii60jhfkq5673g1lb, fk_99kbe7o20v4ego6ga0766b2g4]
+2021-04-30 09:06:43 INFO  TableMetadata:70 - HHH000126: Indexes: [uk_h7bihxhyii60jhfkq5673g1lb, primary]
+2021-04-30 09:06:43 INFO  TableMetadata:66 - HHH000261: Table found: petsdb.user
+2021-04-30 09:06:43 INFO  TableMetadata:67 - HHH000037: Columns: [userid, username, userpassword]
+2021-04-30 09:06:43 INFO  TableMetadata:69 - HHH000108: Foreign keys: []
+2021-04-30 09:06:43 INFO  TableMetadata:70 - HHH000126: Indexes: [primary]
+2021-04-30 09:06:43 INFO  SchemaUpdate:242 - HHH000232: Schema update complete
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.index()
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.home(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.login(javax.servlet.http.HttpServletRequest,com.hcl.cs.model.User)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/saveUser],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.registerSuccess(com.hcl.cs.model.User,org.springframework.validation.BindingResult)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/loginuser],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.loginUser()
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/savePet],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.savePet(com.hcl.cs.model.Pet,org.springframework.validation.BindingResult)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/myPets],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.myPets(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/home],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.petList(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/logout]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.logout(javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/addPet],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.addPet()
+2021-04-30 09:06:44 INFO  RequestMappingHandlerMapping:543 - Mapped "{[/buyPet/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hcl.cs.controller.MainController.buyPet(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2021-04-30 09:06:44 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:42 IST 2021]; root of context hierarchy
+2021-04-30 09:06:44 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:42 IST 2021]; root of context hierarchy
+2021-04-30 09:06:44 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@401317a0
+2021-04-30 09:06:44 INFO  RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@54be6213
+2021-04-30 09:06:44 INFO  GenericWebApplicationContext:984 - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f2b503c: startup date [Fri Apr 30 09:06:42 IST 2021]; root of context hierarchy
